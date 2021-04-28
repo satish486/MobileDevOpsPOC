@@ -22,7 +22,7 @@ jobs:
       run: |
         pwd
         ls -lrth
-        #chmod +x RunAppiumServer.sh # install and run appium server in the background
+        chmod +x RunAppiumServer.sh # install and run appium server in the background
         #./RunAppiumServer.sh
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v1 # install and create the Emulator
