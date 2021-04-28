@@ -22,6 +22,7 @@ jobs:
       run: |
         chmod +x test.sh # install and run appium server in the background
         echo "calling"
+        echo $PATH
         ./test.sh
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v1 # install and create the Emulator
