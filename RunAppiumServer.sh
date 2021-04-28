@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "reached"
 set -ex
 npm install -g appium
 appium -v
