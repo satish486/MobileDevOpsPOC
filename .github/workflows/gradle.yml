@@ -20,9 +20,9 @@ jobs:
         java-version: 1.8
     - name: Install and Run Appium Server
       run: |
-        cd scripts
-        chmod +x RunAppiumServer.sh # install and run appium server in the background
-        ./RunAppiumServer.sh
+        pwd
+        #chmod +x RunAppiumServer.sh # install and run appium server in the background
+        #./RunAppiumServer.sh
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v1 # install and create the Emulator
       with:
