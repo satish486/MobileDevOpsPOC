@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest # the machine type
+    runs-on: macos-latest # the machine type
     steps:
     - uses: actions/checkout@v2 #checkout the code 
     - name: Set up JDK 1.8
