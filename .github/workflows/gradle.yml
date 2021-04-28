@@ -14,15 +14,16 @@ jobs:
         target: [default]
     steps:
     - uses: actions/checkout@v2 #checkout the code 
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
+    # - name: Set up JDK 1.8
+      # uses: actions/setup-java@v1
+      # with:
+        # java-version: 1.8
     - name: Install and Run Appium Server
       run: |
         pwd
         ls -lrth
         chmod +x RunAppiumServer.sh # install and run appium server in the background
+        echo "calling"
         RunAppiumServer.sh
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v1 # install and create the Emulator
