@@ -18,8 +18,6 @@ jobs:
       # uses: actions/setup-java@v1
       # with:
         # java-version: 1.8
-    - name: Install and Run Appium Server
-      uses: moatazeldebsy/appium-server-gitHub-action@V1.0.4
          
     - name: Install and Run Appium Server
       run: |
